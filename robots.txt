@@ -1,0 +1,38 @@
+# robots.txt pentru psihologbrasov.ro
+# Optimizat pentru motoarele de căutare Google
+
+User-agent: *
+Allow: /
+
+# Blocăm fișierele care nu sunt necesare pentru SEO
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /assets/webfonts/
+Disallow: /assets/videos/
+
+# Permitem indexarea imaginilor pentru SEO
+Allow: /assets/images/
+
+# Permitem indexarea paginilor principale și blog-urilor
+Allow: /index.html
+Allow: /Homepage_1.html
+Allow: /blog-*.html
+
+# Blocăm fișierele tehnice
+Disallow: /*.json$
+Disallow: /vercel.json
+
+# Sitemap location
+Sitemap: https://psihologbrasov.ro/sitemap.xml
+
+# Specific pentru Google
+User-agent: Googlebot
+Allow: /
+
+# Specific pentru Googlebot Image
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+# Crawl-delay pentru a evita suprasolicitarea serverului (opțional)
+Crawl-delay: 0
+
